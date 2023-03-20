@@ -62,18 +62,6 @@ class Population:
     def resume_iteration(self):
         self.stop_iteration = False
 
-def guess_seq_len(seq):
-    """
-    DOES NOT WORK
-    """
-    guess = 1
-    max_len = len(seq) // 2
-    for x in range(2, max_len):
-        if seq[0:x] == seq[x:2*x]:
-            guess = x
-
-    return guess
-
 def file_it_all():
     signs = (' ', '1')
 
